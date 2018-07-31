@@ -10,7 +10,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
-public class BaseDaoImpl<T> implements IbaseDao<T>{
+public class BaseDaoImpl<T> implements IBaseDao<T>{
 
 	@Resource
 	private SessionFactory sessionFactory;

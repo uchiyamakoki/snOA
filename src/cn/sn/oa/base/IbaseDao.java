@@ -2,7 +2,7 @@ package cn.sn.oa.base;
 
 import java.util.List;
 
-public interface IbaseDao<T> {
+public interface IBaseDao<T> {
 	/*
 	 * 添加
 	 */
