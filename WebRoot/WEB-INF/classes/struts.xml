@@ -12,5 +12,10 @@
 
     <package name="default" namespace="/" extends="struts-default">
     	<action name="bookAction" class="bookAction"></action>
+   
+   		<!-- 岗位管理Action -->
+   		<action name="role_*" class="roleAction" method="{1}">
+   			<result name="list">/WEB-INF/jsp/role/list.jsp</result>
+   		</action>
     </package>
 </struts>
