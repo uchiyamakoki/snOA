@@ -24,4 +24,11 @@ public class RoleServiceImpl implements IRoleService{
 		return roleDao.findAll();
 	}
 
+	@Override
+	public void delete(Role model) {
+		// TODO Auto-generated method stub
+		roleDao.delete(model.getId());
+		
+	}
+
 }

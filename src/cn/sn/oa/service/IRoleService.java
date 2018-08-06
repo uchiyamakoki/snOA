@@ -8,4 +8,6 @@ public interface IRoleService {
 
 	public List<Role> findAll();
 
+	public void delete(Role model);
+
 }

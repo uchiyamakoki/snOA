@@ -16,6 +16,10 @@
    		<!-- 岗位管理Action -->
    		<action name="role_*" class="roleAction" method="{1}">
    			<result name="list">/WEB-INF/jsp/role/list.jsp</result>
+   			<result name="toList" type="redirectAction">
+   				<param name="actionName">role_list</param>
+   				<param name="namespace">/</param>
+   			</result>
    		</action>
     </package>
 </struts>
