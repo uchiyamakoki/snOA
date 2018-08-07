@@ -36,4 +36,29 @@ public class RoleAction extends BaseAction<Role>{
 		roleService.delete(model);
 		return "toList";
 	}
+	/*
+	 * 跳转到修改页面
+	 */
+	public String editUI(){
+		//根据id查询岗位，用于回显
+		Role role=roleService.getById(model.getId());
+		
+		getValueStack().push(role);
+		
+		return "editUI";
+	}
+	/*
+	 * 修改岗位
+	 */
+	public String edit(){
+		//先查询，然后在修改
+		Role role=roleService.getById(model.getId());
+		
+		role.setName(model.getName());
+		role.setDescription(model.getDescription());
+		
+		roleService.update(role);
+		
+		return "toList";
+	}
 }

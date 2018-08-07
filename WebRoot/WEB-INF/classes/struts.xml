@@ -9,7 +9,8 @@
     <constant name="struts.objectFactory" value="spring"/>
     <!-- struts的Action访问后缀 -->
     <constant name="struts.action.extension" value="do"/>
-
+	<!-- 指定表单主题 -->
+	<constant name="struts.ui.theme" value="simple"></constant>
     <package name="default" namespace="/" extends="struts-default">
     	<action name="bookAction" class="bookAction"></action>
    
@@ -20,6 +21,7 @@
    				<param name="actionName">role_list</param>
    				<param name="namespace">/</param>
    			</result>
+   			<result name="editUI">/WEB-INF/jsp/role/edit.jsp</result>
    		</action>
     </package>
 </struts>

@@ -31,4 +31,16 @@ public class RoleServiceImpl implements IRoleService{
 		
 	}
 
+	@Override
+	public Role getById(Long id) {
+		// TODO Auto-generated method stub
+		return roleDao.getById(id);
+	}
+
+	@Override
+	public void update(Role role) {
+		// TODO Auto-generated method stub
+		roleDao.update(role);
+	}
+
 }

@@ -10,4 +10,8 @@ public interface IRoleService {
 
 	public void delete(Role model);
 
+	public Role getById(Long id);
+
+	public void update(Role role);
+
 }
