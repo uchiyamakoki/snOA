@@ -61,4 +61,18 @@ public class RoleAction extends BaseAction<Role>{
 		
 		return "toList";
 	}
+	/*
+	 * 跳转到添加页面
+	 */
+	public String addUI(){
+		return "addUI";
+	}
+	/*
+	 * 添加岗位
+	 */
+	public String add(){
+		roleService.save(model);
+		
+		return "toList";
+	}
 }

@@ -43,4 +43,10 @@ public class RoleServiceImpl implements IRoleService{
 		roleDao.update(role);
 	}
 
+	@Override
+	public void save(Role model) {
+		// TODO Auto-generated method stub
+		roleDao.save(model);
+	}
+
 }

@@ -14,4 +14,6 @@ public interface IRoleService {
 
 	public void update(Role role);
 
+	public void save(Role model);
+
 }
